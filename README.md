@@ -7,5 +7,5 @@ Este repositório contém um script para execução do chocolatey com as aplica�
 Você deve rodar o powershell como administrador e executar o seguinte comando: 
 
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/luiscrjr/ChocoIsPeaceOfCake/master/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/luiscrjr/Chocolatey/master/install.ps1'))
 ```
