@@ -10,12 +10,15 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"netfx-4.8-devpack"
 ,"chrome"
 ,"dotnetcore-sdk"
-,"visualstudio2019professional"
+,"dotnet"
+,"vscode"
 ,"cmder"
 ,"hyper"
 ,"archi"
 ,"wireshark"
 ,"sql-server-management-studio"
+,"choco install dbeaver"
+,"microsoft-windows-terminal"
 ,"azure-data-studio"
 ,"nodejs-lts"
 ,"soapui"
@@ -24,7 +27,6 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"postman"
 ,"notepadplusplus"
 ,"vim"
-,"typora"
 ,"microsoft-teams") + ($pins = @("vscode")) | % { choco install $_ };
 
 <# avoiding future upgrades of these following programs. #> $pins | % { choco pin add -n="$_" }; 
